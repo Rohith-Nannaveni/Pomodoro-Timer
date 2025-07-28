@@ -15,6 +15,8 @@ function updateTimer(){
     TimerE1.innerHTML = formattedTime;
 }
 
+let sessionCount=0;
+
 function startTimer(){
     clearInterval(interval);
     interval = setInterval(() => {
@@ -22,7 +24,8 @@ function startTimer(){
         updateTimer();
         if(timeLeft === 0){
             clearInterval(interval);
-            alert("Time's up!");
+            sessionCount++;
+            alert(`Hey,You can Take a break now ! Pomodors completed: ${sessionCount}`);
             timeLeft=1800;
         }
     },1000);
