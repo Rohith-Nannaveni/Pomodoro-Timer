@@ -7,5 +7,5 @@ This is a simple and clean Pomodoro Timer built using **HTML**, **CSS**, and **J
 ##  Features
 
 - Start, Stop, and Reset buttons to control the timer
-- Countdown timer set by default to **25 minutes**
+- Countdown timer set by default to **30 minutes**
 - Alerts you when the timer hits zero
